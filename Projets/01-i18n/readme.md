@@ -29,7 +29,7 @@
 
 1. Importer les ressources de langue dans chacune des `Views` en ajoutant le namespace **properties** que nous nommerons `p`.
    - Ajouter la valeur `"clr-namespace:[PROJECT_NAME].Properties"` à la clé `xmlns:p` dans la section `Window`.
-2. Remplacer les valeurs statique de la clé d'Affichage (`Title`, `Content`, `Header`, etc.) des éléments graphique par la propriété dynamique `"{x:Static properties:i18n.[KEY]}"`
+2. Remplacer les valeurs statique de la clé d'Affichage (`Title`, `Content`, `Header`, etc.) des éléments graphique par la propriété dynamique `"{x:Static p:i18n.[KEY]}"`
 
    > ⚠️ S'il existe des spécification de langue statiques, il faut les retirés. Par exemple :
 
