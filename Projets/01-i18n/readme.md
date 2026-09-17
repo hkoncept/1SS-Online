@@ -39,10 +39,8 @@
    ```
 
 ## 3. Traduire dans le **code**
-Simplement accéder à la ressource en utilisant le namespace `i18n`.
-    ```csharp
-    i18n.DELETE_CONFIRMATION
-    ```
+Simplement accéder à la ressource en utilisant le namespace `i18n`. Exemple: `i18n.DELETE_CONFIRMATION`
+
 
 ## 4. Utilisation de textes dynamiques (avec variables)
 
