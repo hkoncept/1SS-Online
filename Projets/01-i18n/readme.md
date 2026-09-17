@@ -15,6 +15,7 @@
 4. Ouvrez `i18n.resx` et entrez une clé et les valeurs pour toutes les parties de texte **statiques** (sans variables) à internationaliser.
    - `Neutral Value` représente la langue de base, ici l'anglais.
    - Une colonne par langue supplémentaire sera affichée afin d'y entrer la traduction dans cette langue.
+   - Voici la [liste des clé à utiliser](./keylist.md).
    - Exemple :
 
      | Name        | Neutral Value     | fr-CA (French (Canada))            |
