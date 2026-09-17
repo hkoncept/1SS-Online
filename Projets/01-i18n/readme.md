@@ -51,7 +51,7 @@ Simplement accéder à la ressource en utilisant le namespace `i18n`. Exemple: `
 2. Ceci permettra de faire la corrélation des variables dans vos fichiers de langue en les numérottant. Exemple :
    | Name | Neutral Value | fr-CA (French (Canada)) |
    | ----------- | ----------------- | ---------------------------------- |
-   | MESSAGE_DELETE_PLAYER | Delete player {SelectedPlayer.FullName}? | Supprimer le joueur{SelectedPlayer.FullName}? |
+   | MESSAGE_DELETE_PLAYER | Delete player {0}? | Supprimer le joueur{1}? |
    | STATUS_TEAM_ADDED | {1} has a new player {0}! | {0} a été ajouté à {1}. |
 
 3. Utiliser la fonction `Format` de la classe `string` afin de remplacer les `{0}` des fichier de ressouces de lanque par la variable appropriée. Exemple : 
