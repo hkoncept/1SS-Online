@@ -84,7 +84,7 @@ MessageBoxResult result = MessageBox.Show(
 
 # 5. Les ressources images
 
-Trouvez le moyen d'avoir un logo NHL en anglais et LNH en français.
+Trouvez le moyen d'avoir un [logo NHL en anglais et LNH en français](./includes/logos.zip).
 
 > 💡Indice: Est-ce que les valeurs des fichiers de langue peuvent contenir un chemin d'accès à un fichier image ?
 
