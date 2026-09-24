@@ -86,9 +86,13 @@ MessageBoxResult result = MessageBox.Show(
 
 Trouvez le moyen d'avoir un [logo NHL en anglais et LNH en français](./includes/logos.zip).
 
-> 💡Indice: Est-ce que les valeurs des fichiers de langue peuvent contenir un chemin d'accès à un fichier image ?
+> 💡Indice 1: Est-ce que les valeurs des fichiers de langue peuvent contenir un chemin d'accès à un fichier image ?
 
-> 💡Indice: Il faudra passer le résultat de l'indice précédent dans la valeur de la clé __Binding__.
+> 💡Indice 2: Il faudra passer le résultat de l'indice précédent dans la valeur de la clé __Source__ de __Binding__.  Exemple :
+
+```csharp
+{Binding Source={[INDICE 1 ICI]}}
+```
 
 # Critères de correction
 | #	| Critère	| Points |
