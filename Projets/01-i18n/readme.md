@@ -94,6 +94,8 @@ Trouvez le moyen d'avoir un [logo NHL en anglais et LNH en français](./includes
 {Binding Source={[INDICE 1 ICI]}}
 ```
 
+> ⚠️ Attention: Est-ce que les images se copient dans le répertoire de build ?  Voir `C:\VSBuilds`
+
 # Critères de correction
 | #	| Critère	| Points |
 | --- | --------------- | ----- |
