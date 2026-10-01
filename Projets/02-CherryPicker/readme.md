@@ -6,12 +6,9 @@
 
 [Projet de départ](<./includes/CherryPicker%20(Base%20Project).zip>)
 
-<<<<<<< HEAD
-=======
 [Archives de l'entreprise](<./includes/Archives.zip)
 
 
->>>>>>> 19d6e2b (2026 CherryPicker (v0.1))
 [Présentation en classe]
 
 <!-- # Critères de correction
