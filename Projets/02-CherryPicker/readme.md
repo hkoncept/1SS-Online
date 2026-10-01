@@ -4,7 +4,9 @@
 
 # 🏋🏻‍♂️ Projet 2 - CherryPicker - 25%
 
-[Description à venir...]
+[Projet de départ](<./includes/CherryPicker%20(Base%20Project).zip>)
+
+[Présentation en classe]
 
 <!-- # Critères de correction
 | #	| Critère	| Points |
