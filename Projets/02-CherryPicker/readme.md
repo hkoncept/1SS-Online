@@ -6,7 +6,7 @@
 
 [Projet de départ](<./includes/CherryPicker%20(Base%20Project).zip>)
 
-[Archives de l'entreprise](<./includes/Archives.zip)
+[Archives de l'entreprise](./includes/Archives.zip)
 
 
 [Présentation en classe]
