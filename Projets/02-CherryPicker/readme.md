@@ -96,6 +96,7 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
             // Afficher les résultats à la console pour commencer
         }
     ```
+    - Testez avec [ce fichier](./includes/test.txt) au besoin.
     2. Passer les résultats de recherche dans un rapport `SearchResultItem` à l'aide d'un `Progress`. 
     ```csharp
     public void SearchFile(string filePath, Regex regex, IProgress<SearchResultItem> results) {
