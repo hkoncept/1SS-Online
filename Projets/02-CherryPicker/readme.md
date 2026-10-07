@@ -84,6 +84,24 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
 | Le logiciel doit gérer les erreurs d'accès. | Utiliser `try/catch`. |
 
 
+# Suggestion de structure de travail
+### FileSearchService
+1. Faire un `singleton` de cette classe
+2. Programmer, en étapes, une fonction de recherche dans un fichier précis :
+    1. Débutez par le noeud de la fonction, la recherche regex
+    ```csharp
+        public void SearchFile(string filePath, Regex regex) {
+            // Lire le fichier dans une variable
+            // Appliquer le Regex à cette variable
+            // Afficher les résultats à la console pour commencer
+        }
+    ```
+    2. Passer les résultats de recherche dans un rapport `SearchResultItem` à l'aide d'un `Progress`. 
+    ```csharp
+    public void SearchFile(string filePath, Regex regex, IProgress<SearchResultItem> results) {
+        // Déclencher la fonction `Report` du progress `results` pour chaque résultat.
+    }
+    ```
 <!-- # Critères de correction
 | #	| Critère	| Points |
 | --- | --------------- | ----- |
