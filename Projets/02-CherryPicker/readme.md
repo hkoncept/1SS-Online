@@ -46,8 +46,9 @@ Souhaitable |
 - **Fiabilité :** une recherche doit retourner tous les fichiers accessibles correspondant aux critères.
 
 ## 5. Interface utilisateur
+### Ouverture de l'application
 ![Ouverture](./includes/ui01.png)
-
+### Après le résultat de recherche
 ![Résultat](./includes/UI02.png)
 
 ## 6. Limites et exclusions
