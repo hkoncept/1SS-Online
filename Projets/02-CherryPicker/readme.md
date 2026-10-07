@@ -85,10 +85,10 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
 
 
 # Suggestion de structure de travail
-### FileSearchService
-1. Faire un `singleton` de cette classe
+## FileSearchService
+1. Faire un `singleton` de cette classe.
 2. Programmer, en étapes, une fonction de recherche dans un fichier précis :
-    1. Débutez par le noeud de la fonction, la recherche regex
+    1. Débutez par le noeud de la fonction, la recherche d'expression régulière :
     ```csharp
         public void SearchFile(string filePath, Regex regex) {
             // Lire le fichier dans une variable
@@ -102,6 +102,8 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
         // Déclencher la fonction `Report` du progress `results` pour chaque résultat.
     }
     ```
+## SearchResultItem
+Classe `Models` servant simplement à enregistrer un résultat unique de recherche avec, au minimum, les attributs `filePath` (fichier source) et `match` (ce qui a été trouvé).
 <!-- # Critères de correction
 | #	| Critère	| Points |
 | --- | --------------- | ----- |
