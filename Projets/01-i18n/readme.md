@@ -88,6 +88,8 @@ Trouvez le moyen d'avoir un [logo NHL en anglais et LNH en français](./includes
 
 > 💡Indice: Est-ce que les valeurs des fichiers de langue peuvent contenir un chemin d'accès à un fichier image ?
 
+> 💡Indice: Faire un __Binding__ de la valeur du __x:Static__.
+
 # Critères de correction
 | #	| Critère	| Points |
 | --- | --------------- | ----- |
