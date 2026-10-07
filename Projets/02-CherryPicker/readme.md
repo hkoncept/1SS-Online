@@ -36,9 +36,11 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
 | F02 | Parcourir le répertoire et ses sous-répertoires | Obligatoire |
 | F03 | Rechercher une expression régulière dans les fichiers texte | Obligatoire |
 | F04 | Afficher les fichiers correspondants | Obligatoire |
-| F05 | Afficher l'emplacement (#ligne et #colonne) du résultat dans le fichier | Souhaitable |
-| F06 | Afficher une progression réelle |
-Souhaitable |
+| F05 | Être en mesure d'annuler l'opération | Obligatoire |
+| F06 | Afficher l'emplacement (#ligne et #colonne) du résultat dans le fichier | Souhaitable |
+| F07 | Afficher l'aperçu résultat dans le fichier | Souhaitable |
+| F08 | Afficher une progression réelle | Souhaitable |
+
 ## 4. Exigences non fonctionnelles
 
 - **Performance :** l'interface doit demeurer réactive pendant une recherche.
