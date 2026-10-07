@@ -85,6 +85,9 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
 
 
 # Suggestion de structure de travail
+
+## SearchResultItem
+Classe `Models` servant simplement à enregistrer un résultat unique de recherche avec, au minimum, les attributs `filePath` (fichier source) et `match` (ce qui a été trouvé).
 ## FileSearchService
 1. Faire un `singleton` de cette classe.
 2. Programmer, en étapes, une fonction de recherche dans un fichier précis :
@@ -103,8 +106,16 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
         // Déclencher la fonction `Report` du progress `results` pour chaque résultat.
     }
     ```
-## SearchResultItem
-Classe `Models` servant simplement à enregistrer un résultat unique de recherche avec, au minimum, les attributs `filePath` (fichier source) et `match` (ce qui a été trouvé).
+    3. Programmes une fonction de recherche de répertoire qui sera utilisé de façon récursive.
+    ```csharp
+    public void SearchDirectoryRecursive(string directoryPath, Regex regex, IProgress<SearchResultItem> results) {
+        // Pour chacun des fichiers dans ce répertoire
+        // Lancer la fonction SearchFile
+
+        // Pour chacun des répertoires dans ce répertoire
+        // Relancer la fonction SearchDirectoryRecursive
+    }
+    ```
 <!-- # Critères de correction
 | #	| Critère	| Points |
 | --- | --------------- | ----- |
