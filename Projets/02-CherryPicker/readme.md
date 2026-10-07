@@ -2,14 +2,84 @@
 
 <h4 align="Center">1SS - Sujets spéciaux</h4>
 
-# 🏋🏻‍♂️ Projet 2 - CherryPicker - 25%
+# 🏋🏻‍♂️ Projet 2 - CherryPicker (v.0.8) - 25%
 
-[Projet de départ](<./includes/CherryPicker%20(Base%20Project).zip>)
+Infologique Innovations est une entreprise oeuvrant dans la recherche et le développement a présentement un soucis avec sa gestion documentaire.  Elle possède [plusieurs milliers de fichier de rapports importants](./includes/Archives.zip) et extraire des données est devenu une tâche bien ardue et coûteuse.
 
-[Archives de l'entreprise](./includes/Archives.zip)
+Elle vous a donc mandaté afin de développer un logiciel utilitaire permettant de faire des recherches personnalités dans l'ensemble des fichiers enfants d'un répertoire de base.  Votre utilitaire fera sauver beaucoup d'argent à l'entreprise
 
+Cédrik Dubogue, employé d'Infologique Innovations à [débuté le projet](<./includes/CherryPicker%20(Base%20Project).zip>) en créant l'interface utilisateur et vous demande de compléter l'utilitaire en y ajoutant la logique métier.
 
-[Présentation en classe]
+Voici le cahier des charges soumis par Infologique Innovations.
+
+# Cahier des charges — Projet logiciel
+
+**Nom du logiciel :** CherryPicker  
+**Type de projet :** Utilitaire de recherche spécialisée
+
+## 1. Présentation du projet
+
+**Description :**  
+CherryPicker est un utilitaire permettant de rechercher du texte à l'intérieur des fichiers d'un répertoire et de ses sous-répertoires permettant les filtres en expressions régulières.
+
+**Problématique :**  
+La recherche manuelle d'informations dans un grand nombre de fichiers est longue et fastidieuse et coûte très cher à l'entreprise.
+
+**Objectif :**  
+Développer un outil simple et rapide permettant d'automatiser cette recherche.
+
+## 2. Exigences fonctionnelles
+
+| ID | Fonctionnalité | Priorité |
+|---|---|---|
+| F01 | Sélectionner un répertoire de base | Obligatoire |
+| F02 | Parcourir le répertoire et ses sous-répertoires | Obligatoire |
+| F03 | Rechercher une expression régulière dans les fichiers texte | Obligatoire |
+| F04 | Afficher les fichiers correspondants | Obligatoire |
+| F05 | Afficher l'emplacement (#ligne et #colonne) du résultat dans le fichier | Souhaitable |
+| F06 | Afficher une progression réelle |
+Souhaitable |
+## 4. Exigences non fonctionnelles
+
+- **Performance :** l'interface doit demeurer réactive pendant une recherche.
+- **Robustesse :** les fichiers inaccessibles ne doivent pas provoquer l'arrêt de l'application.
+- **Fiabilité :** une recherche doit retourner tous les fichiers accessibles correspondant aux critères.
+
+## 5. Interface utilisateur
+![Ouverture](./includes/ui01.png)
+
+![Ouverture](./includes/ui02.png)
+
+## 6. Limites et exclusions
+
+- Aucune recherche dans des fichiers PDF ou Word.
+- Aucune modification des fichiers analysés.
+- Aucune recherche sur des ordinateurs distants.
+- Aucun système d'authentification.
+
+## 7. Livrables
+- Code source complet.
+
+## 8. Critères d'acceptation
+
+- La recherche fonctionne sur une arborescence d'au moins 10 niveaux.
+- Une recherche sans résultat affiche un message approprié.
+- Les résultats indiquent le chemin complet des fichiers.
+- Un fichier inaccessible ne fait pas planter l'application.
+- L'interface demeure utilisable pendant la recherche.
+- En tout temps il doit être possible d'annuler une recherche.
+
+---
+
+## Annexe — Considérations techniques ?
+
+| Cahier des charges | Considérations technique |
+|---|---|
+| Le logiciel doit parcourir tous les sous-répertoires. | Utiliser une fonction récursive. |
+| L'interface doit demeurer réactive. | Utiliser `async/await`. |
+| Les résultats doivent apparaître dans une liste. | Utiliser un `DataGrid` WPF. |
+| Le logiciel doit gérer les erreurs d'accès. | Utiliser `try/catch`. |
+
 
 <!-- # Critères de correction
 | #	| Critère	| Points |
