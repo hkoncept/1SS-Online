@@ -2,7 +2,7 @@
 
 <h4 align="Center">1SS - Sujets spéciaux</h4>
 
-# 🏋🏻‍♂️ Projet 2 - CherryPicker (v.0.8) - 25%
+# 🏋🏻‍♂️ Projet 2 - CherryPicker (v.0.95) - 25%
 
 Infologique Innovations est une entreprise œuvrant dans la recherche et le développement qui a présentement un souci avec sa gestion documentaire. Elle possède [plusieurs milliers de fichiers de rapports importants](./includes/Archives.zip) et en extraire des données est devenu une tâche bien ardue et coûteuse.
 
