@@ -2,7 +2,7 @@
 
 <h4 align="Center">1SS - Sujets spéciaux</h4>
 
-# 🏋🏻‍♂️ Projet 2 - CherryPicker (v.0.95) - 25%
+# 🏋🏻‍♂️ Projet 2 - CherryPicker (v1.0) - 25%
 
 Infologique Innovations est une entreprise œuvrant dans la recherche et le développement qui a présentement un souci avec sa gestion documentaire. Elle possède [plusieurs milliers de fichiers de rapports importants](./includes/Archives.zip) et en extraire des données est devenu une tâche bien ardue et coûteuse.
 
@@ -137,13 +137,16 @@ Classe `Models` servant simplement à enregistrer un résultat unique de recherc
 | 01 | La boîte de dialogue s'ouvre par défaut dans le répertoire où se trouve l'exécutable | 1 |
 | 02 | Possibilité de sélectionner un répertoire | 1 |
 | 03 | Il est impossible de lancer une recherche avec une Regex invalide | 2 |
-| 04 | L'application présente l'ensemble des données, et ce, en temps réel | 4 |
-| 05 | La recherche se fait totalement de manière asynchrone | 5 |
-| 06 | Il est possible d'annuler une tâche | 2 |
-| 07 | Utilisation correcte des classes de progression | 2 |
-| 08 | Utilisabilité générale et robustesse de l'application | 4 |
-| 09 | Une logique UX est appliquée pour l'activation des boutons | 2 |
-| 10 | Flexibilité et maintenance de l'architecture appliquée | 2 |
+| 04 | Affichage de l'avancement de la recherche (Nombre de fichiers lus et nombre de résultats) | 2 |
+| 05 | Affichage correct de la liste des résultats (fichier et élément trouvé) | 1 |
+| 06 | Extraction et affichage du mot complet  | 1 |
+| 07 | La recherche se fait totalement de manière asynchrone | 3 |
+| 08 | La recherche se fait de façon récursive | 3 |
+| 09 | Il est possible d'annuler une tâche | 1 |
+| 10 | Utilisation correcte des classes de progression | 2 |
+| 11 | Utilisabilité générale et robustesse de l'application | 4 |
+| 12 | Une logique UX est appliquée pour l'activation des boutons | 2 |
+| 13 | Flexibilité et maintenance de l'architecture appliquée | 2 |
 | P | Élément de code non conforme aux exigences vues dans le programme (par erreur) | -0,5 |
 
 ### Bonus
