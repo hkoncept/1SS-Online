@@ -137,11 +137,11 @@ Classe `Models` servant simplement à enregistrer un résultat unique de recherc
 | 01 | La boîte de dialogue s'ouvre par défaut dans le répertoire où se trouve l'exécutable | 1 |
 | 02 | Possibilité de sélectionner un répertoire | 1 |
 | 03 | Il est impossible de lancer une recherche avec une Regex invalide | 2 |
-| 04 | L'application présente l'ensemble des données, et ce, en temps réel | 2 |
+| 04 | L'application présente l'ensemble des données, et ce, en temps réel | 4 |
 | 05 | La recherche se fait totalement de manière asynchrone | 5 |
 | 06 | Il est possible d'annuler une tâche | 2 |
 | 07 | Utilisation correcte des classes de progression | 2 |
-| 08 | Utilisabilité générale et robustesse de l'application | 2 |
+| 08 | Utilisabilité générale et robustesse de l'application | 4 |
 | 09 | Une logique UX est appliquée pour l'activation des boutons | 2 |
 | 10 | Flexibilité et maintenance de l'architecture appliquée | 2 |
 | P | Élément de code non conforme aux exigences vues dans le programme (par erreur) | -0,5 |
