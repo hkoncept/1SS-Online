@@ -130,7 +130,7 @@ Classe `Models` servant simplement à enregistrer un résultat unique de recherc
    5. Ajouter la possibilité de passer un `IProgress` retournant un rapport sur l'état de la recherche (`SearchProgressReport`).
    6. Rendre ces fonctions asynchrones en modifiant leur signature et en ajoutant des `await` aux bons endroits.
 
-# Critères de correction (version finale à venir)
+# Critères de correction
 
 | # | Critère | Points |
 | --- | --------------- | ----- |
