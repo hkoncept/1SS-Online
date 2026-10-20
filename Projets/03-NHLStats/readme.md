@@ -2,54 +2,53 @@
 
 <h4 align="Center">1SS - Sujets spéciaux</h4>
 
-# 🏋🏻‍♂️ Projet 3 - NHLStats - 15%
+# 🏋🏻‍♂️ Projet 3 - NHLStats - 15 %
 
 #### Lecture en temps réel des statistiques des joueurs.
 
-## 1. Lecture des données d'équipes
+## 1. Lecture des données des équipes
 
-Un client vous demande de programmer une application permettant de consulter la composition des équipes d'aujourd'hui mais également du passé. Comme vous avez déjà programmé une application NHLTeams, vous avez pris la décision de partir de ce projet et de l'adapter au besoin du nouveau client.
+Un client vous demande de programmer une application permettant de consulter la liste des équipes de la LNH, leurs joueurs respectifs ainsi que leurs statistiques individuelles, et ce, en temps réel.
 
-Pour ce projet, aucune persistance de données métier n'est authorisé. À l'ouverture de l'application et lors d'un changement d'année, elle ira lire les données des équipes ainsi que des joueurs directement de l'API de la NHL.
+Lors de l'ouverture de l'application, la liste des équipes sera téléchargée à partir de l'API de la NHL et affichée à l'écran. Lors de la sélection d'une équipe, la liste de ses joueurs sera également téléchargée et affichée à l'écran. Finalement, lors de la sélection d'un joueur, ses statistiques en cours seront à leur tour lues à partir de l'API et affichées à l'écran.
 
-## 2. Lecture des statistiques d'un joueur.
+> Pour ce projet, aucune persistance de données métier n'est autorisée.
 
-Lors de la sélection d'un joueur, ses statistiques actuelles seront téléchargée de l'API de la NHL (à chaque sélection de joueur). Cela veut dire que si on sélectionne un joueur qui a 5 buts et qu'on le resélectionne plus tard et qu'il a compté un autre but, l'application se mettra à jour avec ses 6 buts.
+## 2. Visuel demandé
 
-Voici le visuel demandé par le client :
 ![UI](../03-NHLStats/includes/nhlstats.png)
 
-## 3. Refactoriser un projet existant.
-Comme vous avez déjà programmé une application similaire `NHLTeams`, vous devez repartir de la version actuelle du repo d'équipe orginal et effectuer le dépôt dans une nouvelle branche nommée `NHLStats`.
+## 3. Refactoriser un projet existant
 
-## 4. Information complémentaire.
+Comme vous avez déjà programmé une application similaire, `NHLTeams`, vous devez repartir de la version actuelle du dépôt d'équipe original et effectuer le dépôt dans une nouvelle branche nommée `NHLStats`.
 
+## 4. API de la NHL
 
-<!-- # Critères de correction
+### Pour obtenir la liste des équipes :
 
-| #   | Critère                                                                                   | Points |
-| --- | ----------------------------------------------------------------------------------------- | ------ |
-| 01  | Toutes les années disponibles sont sélectionnables                                        | 1      |
-| 02  | Un changement d'année, met l'information des                                              | 1      |
-| 03  | Il est impossible de lancer une recherche avec une Regex invalide                         | 2      |
-| 04  | Affichage de l'avancement de la recherche (Nombre de fichiers lus et nombre de résultats) | 2      |
-| 05  | Affichage correct de la liste des résultats (fichier et élément trouvé)                   | 1      |
-| 06  | Extraction et affichage du mot complet                                                    | 1      |
-| 07  | La recherche se fait totalement de manière asynchrone                                     | 3      |
-| 08  | La recherche se fait de façon récursive                                                   | 3      |
-| 09  | Il est possible d'annuler une tâche                                                       | 1      |
-| 10  | Utilisation correcte des classes de progression                                           | 2      |
-| 11  | Utilisabilité générale et robustesse de l'application                                     | 4      |
-| 12  | Une logique UX est appliquée pour l'activation des boutons                                | 2      |
-| 13  | Flexibilité et maintenance de l'architecture appliquée                                    | 2      |
-| P   | Élément de code non conforme aux exigences vues dans le programme (par erreur)            | -0,5   |
+https://api-web.nhle.com/v1/standings/now
 
-### Bonus
+### Liste des joueurs d'une équipe précise :
 
-| #   | Élément                                                                                   | Points |
-| --- | ----------------------------------------------------------------------------------------- | ------ |
-| 01  | Afficher l'emplacement (numéro de ligne et numéro de colonne) du résultat dans le fichier | 1      |
-| 02  | Afficher un aperçu du résultat dans le fichier                                            | 1      |
-| 03  | Afficher une progression réelle                                                           | 1      | -->
+https://api-web.nhle.com/v1/roster/MTL/current (où MTL est l'abréviation de l'équipe).
 
-<hr><p align="Center"><img src="../../includes/end.png" alt="drawing" width="150"/></p> ```
+### Statistiques d'un joueur précis :
+
+https://api-web.nhle.com/v1/player/8480018/landing (où 8480018 est l'identifiant du joueur). Pour obtenir les statistiques de l'année en cours, recherchez la clé `featuredStats.regularSeason.subSeason`.
+
+## Critères de correction
+
+| # | Critère | Points |
+| --- | --------------- | ----- |
+| 01 | La liste des équipes actuelles s'affiche à l'écran. | 2 |
+| 02 | La première équipe est automatiquement sélectionnée. | 0,5 |
+| 03 | La liste des joueurs d'une équipe s'affiche à l'écran. | 3 |
+| 04 | Le premier joueur de l'équipe est automatiquement sélectionné. | 0,5 |
+| 05 | La sélection d'un joueur affiche correctement ses statistiques. | 2 |
+| 06 | Le visuel est conforme aux demandes de l'écran. | 1 |
+| 07 | L'application fonctionne en français et en anglais. | 1 |
+| 08 | Il est possible de sélectionner la langue dans l'application. | 1 |
+| 09 | L'architecture de l'application est conforme aux enseignements (async, MVVM, services, etc.). | 3 |
+| 10 | Application propre ne contenant que le code nécessaire. | 1 |
+
+<hr><p align="Center"><img src="../../includes/end.png" alt="drawing" width="150"/></p>
