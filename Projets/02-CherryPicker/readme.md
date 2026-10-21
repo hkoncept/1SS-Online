@@ -50,10 +50,10 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
 ## 5. Interface utilisateur
 
 ### Ouverture de l'application
-![Ouverture](./includes/ui01.png)
+![Ouverture](./includes/cherrypicker-ui02.png)
 
 ### Après le résultat de la recherche
-![Résultat](./includes/UI02.png)
+![Résultat](./includes/cherrypicker-ui01.png)
 
 ## 6. Limites et exclusions
 
@@ -156,5 +156,13 @@ Classe `Models` servant simplement à enregistrer un résultat unique de recherc
 | 01 | Afficher l'emplacement (numéro de ligne et numéro de colonne) du résultat dans le fichier | 1 |
 | 02 | Afficher un aperçu du résultat dans le fichier | 1 |
 | 03 | Afficher une progression réelle | 1 |
+
+## Interface utilisateur du bonus
+
+### Ouverture de l'application (bonus)
+![Ouverture](./includes/ui01.png)
+
+### Après le résultat de la recherche (bonus)
+![Résultat](./includes/UI02.png)
 
 <hr><p align="Center"><img src="../../includes/end.png" alt="drawing" width="150"/></p>
