@@ -129,6 +129,7 @@ Classe `Models` servant simplement à enregistrer un résultat unique de recherc
       ```
    5. Ajouter la possibilité de passer un `IProgress` retournant un rapport sur l'état de la recherche (`SearchProgressReport`).
    6. Rendre ces fonctions asynchrones en modifiant leur signature et en ajoutant des `await` aux bons endroits.
+   7. S'informer sur `char.IsLetter` afin d'être en mesure d'extraîre le mot contenant le regex.
 
 # Critères de correction
 
