@@ -57,7 +57,7 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
 
 ## 6. Limites et exclusions
 
-- Aucune recherche dans des fichiers PDF ou Word.
+- Aucune recherche dans des fichiers PDF ou Word, seul des fichier .txt seront présents lors de la correction.
 - Aucune modification des fichiers analysés.
 - Aucune recherche sur des ordinateurs distants.
 - Aucun système d'authentification.
@@ -70,7 +70,6 @@ Développer un outil simple et rapide permettant d'automatiser cette recherche.
 - La recherche fonctionne sur une arborescence d'au moins 10 niveaux.
 - Une recherche sans résultat affiche un message approprié.
 - Les résultats indiquent le chemin complet des fichiers.
-- Un fichier inaccessible ne fait pas planter l'application.
 - L'interface demeure utilisable pendant la recherche.
 - En tout temps, il doit être possible d'annuler une recherche.
 
@@ -150,7 +149,7 @@ Classe `Models` servant simplement à enregistrer un résultat unique de recherc
 | 13 | Flexibilité et maintenance de l'architecture appliquée | 2 |
 | P | Élément de code non conforme aux exigences vues dans le programme (par erreur) | -0,5 |
 
-### Bonus
+## Bonus
 
 | # | Élément | Points |
 | --- | --------------- | ----- |
