@@ -157,7 +157,7 @@ Classe `Models` servant simplement à enregistrer un résultat unique de recherc
 | 01 | Afficher l'emplacement (numéro de ligne et numéro de colonne) du résultat dans le fichier | 1 |
 | 02 | Afficher un aperçu du résultat dans le fichier | 1 |
 | 03 | Afficher une progression réelle | 1 |
-
+> ⚠️ Jusqu'à concurence d'un point supplémentaire pour la session.
 ## Interface utilisateur du bonus
 
 ### Ouverture de l'application (bonus)
