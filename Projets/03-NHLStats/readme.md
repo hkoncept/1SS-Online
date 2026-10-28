@@ -36,6 +36,16 @@ https://api-web.nhle.com/v1/roster/MTL/current (où MTL est l'abréviation de l'
 
 https://api-web.nhle.com/v1/player/8480018/landing (où 8480018 est l'identifiant du joueur). Pour obtenir les statistiques de l'année en cours, recherchez la clé `featuredStats.regularSeason.subSeason`.
 
+## 5. Information complémentaire
+#### Async lors de l'ouverture
+Vous constaterez qu'il est impossible de lancer une fonction `async` dans un constructeur.  Vous aurez besoin d'utiliser une méthode de cycle de vie.
+```csharp
+private async void Window_Loaded(object sender, RoutedEventArgs e)
+{
+  await LoadDataAsync();
+}
+``` 
+
 ## Critères de correction
 
 | # | Critère | Points |
