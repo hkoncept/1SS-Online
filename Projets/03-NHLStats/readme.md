@@ -39,7 +39,11 @@ https://api-web.nhle.com/v1/player/8480018/landing (où 8480018 est l'identifian
 ## 5. Information complémentaire
 #### Async lors de l'ouverture
 Vous constaterez qu'il est impossible de lancer une fonction `async` dans un constructeur.  Vous aurez besoin d'utiliser une méthode de cycle de vie.
-Dans `MainWindow.xaml.cs`
+### Dans `MainWindow.xaml`:
+
+Ajoutez `Loaded="Window_Loaded"` dans la section `Window`.
+
+### Dans `MainWindow.xaml.cs`
 ```csharp
 private async void Window_Loaded(object sender, RoutedEventArgs e)
 {
@@ -49,13 +53,16 @@ private async void Window_Loaded(object sender, RoutedEventArgs e)
 }
 ``` 
 
-Dans `MainViewModel.cs`
+### Dans `MainViewModel.cs`
 ```csharp
 public async Task InitializeAsync()
 {
   await LoadTeamsAsync();
 }
 ``` 
+
+
+
 
 ## Critères de correction
 
