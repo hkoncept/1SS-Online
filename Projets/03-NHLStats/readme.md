@@ -8,7 +8,7 @@
 
 ## 1. Lecture des données des équipes
 
-Un client vous demande de programmer une application permettant de consulter la liste des équipes de la LNH, leurs joueurs respectifs ainsi que leurs statistiques individuelles, et ce, en temps réel.
+Un client vous demande de programer une application permettant de consulter la liste des équipes de la LNH, leurs joueurs respectifs ainsi que leurs statistiques individuelles, et ce, en temps réel.
 
 Lors de l'ouverture de l'application, la liste des équipes sera téléchargée à partir de l'API de la NHL et affichée à l'écran. Lors de la sélection d'une équipe, la liste de ses joueurs sera également téléchargée et affichée à l'écran. Finalement, lors de la sélection d'un joueur, ses statistiques en cours seront à leur tour lues à partir de l'API et affichées à l'écran.
 
@@ -61,10 +61,19 @@ public async Task InitializeAsync()
 }
 ``` 
 
-### Utilisation d'un adapteur `FromJson`
+### Utilisation d'un adaptateur `FromJson`
 Il faut parfois adapter la lecture d'une structure Json non conventionnelle tel celle de la LNH.  Pour ce faire, nous utiliserons unr méthode `FromJson` qui prendra en paramètre un `token` json et le transformera en une équipe en mémoire.
 
-Voici la classe [Team](./includes/Team.cs) à utiliser.
+Voici la classe [Team](./includes/Team.cs) que vous pouvez utiliser au besoin.
+
+> Créez ensuite les classes `Player` et `Stat` en utilisant le même principe de design pattern.
+
+### Déclencher une fonction async dans un setter
+Un setter ne peut pas être async. Tu peux toutefois y lancer une méthode asynchrone avec `_ =`, sans attendre son résultat. Voici un exemple : 
+```c++
+  // Lance la méthode sans bloquer le setter.
+  _ = LoadPlayersAsync(value);
+```
 
 
 ## Critères de correction
