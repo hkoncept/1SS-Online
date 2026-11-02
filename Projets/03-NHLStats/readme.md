@@ -14,9 +14,13 @@ Lors de l'ouverture de l'application, la liste des équipes sera téléchargée 
 
 > Pour ce projet, aucune persistance de données métier n'est autorisée.
 
-## 2. Visuel demandé
-
-![UI](../03-NHLStats/includes/nhlstats.png)
+## 2. Visuels demandés
+### Ouverture de l'application et sélection d'une équipe
+![UI](../03-NHLStats/includes/ui01.png)
+### Sélection d'un joueur
+![UI](../03-NHLStats/includes/ui02.png)
+### Sélection d'une autre équipe
+![UI](../03-NHLStats/includes/ui03.png)
 
 ## 3. Refactoriser un projet existant
 
