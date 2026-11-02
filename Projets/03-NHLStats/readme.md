@@ -81,14 +81,13 @@ Un setter ne peut pas être async. Tu peux toutefois y lancer une méthode async
 | # | Critère | Points |
 | --- | --------------- | ----- |
 | 01 | La liste des équipes actuelles s'affiche à l'écran. | 2 |
-| 02 | La première équipe est automatiquement sélectionnée. | 0,5 |
+| 02 | La première équipe est automatiquement sélectionnée. | 1 |
 | 03 | La liste des joueurs d'une équipe s'affiche à l'écran. | 3 |
-| 04 | Le premier joueur de l'équipe est automatiquement sélectionné. | 0,5 |
-| 05 | La sélection d'un joueur affiche correctement ses statistiques. | 2 |
-| 06 | Le visuel est conforme aux demandes de l'écran. | 1 |
-| 07 | L'application fonctionne en français et en anglais. | 1 |
-| 08 | Il est possible de sélectionner la langue dans l'application. | 1 |
-| 09 | L'architecture de l'application est conforme aux enseignements (async, MVVM, services, etc.). | 3 |
+| 04 | La sélection d'un joueur affiche correctement ses statistiques. | 2 |
+| 05 | Le visuel est conforme aux demandes de l'écran. | 1 |
+| 06 | L'application fonctionne en français et en anglais. | 1 |
+| 07 | Il est possible de sélectionner la langue dans l'application. | 1 |
+| 08 | L'architecture de l'application est conforme aux enseignements (async, MVVM, services, etc.). | 3 |
 | 10 | Application propre ne contenant que le code nécessaire. | 1 |
 
 <hr><p align="Center"><img src="../../includes/end.png" alt="drawing" width="150"/></p>
