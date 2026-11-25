@@ -70,7 +70,7 @@ Il y a 8 bogues! Il ne sont pas évidents. Je suis chien, je sais!
 
 # 2. La remise
 
-La remise s'effectuera sur GitHub dans le repo de votre équipe `-Banques` dans la branche principale `Main`.
+La remise s'effectuera sur GitHub dans le repo de votre équipe `-ET` (pour épreuve terminale) dans la branche principale `Main`.
 
 Un outil de comparaison des commites sera utilisé afin de vérifer si le travail à été balancé sur plusieurs commits et pour chacun des membres de l'équipe.
 
